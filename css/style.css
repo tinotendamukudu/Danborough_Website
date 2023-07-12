@@ -532,16 +532,7 @@
     background: #fff;
     padding: 40px 30px;
     width: 100%;
-    border: 1px solid #eef0ef;
-  }
-  
-  .why-us .icon-boxes .icon-box i {
-    font-size: 32px;
-    padding: 18px;
-    color: #5fcf80;
-    margin-bottom: 30px;
-    background: #ecf9f0;
-    border-radius: 50px;
+    border: 2px solid #06964e;
   }
   
   .why-us .icon-boxes .icon-box h4 {
@@ -793,8 +784,10 @@
   
 /*community section*/
 .community {
+  padding-left: 20px;
+  padding-top: 10px;
   margin-top: 8vh;
   border: none;
-  background: rgb(231, 233, 238);
+  background: rgb(242, 247, 247);
   border-radius: 8px;
 }
