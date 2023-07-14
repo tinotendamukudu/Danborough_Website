@@ -266,6 +266,9 @@
     transition: .5s;
     border-radius: 8px;
 }
+.service-item .service-title h5 {
+  color: #eaab0dfe;
+}
 
 .service-item:hover {
     margin-top: -10px;
@@ -790,4 +793,20 @@
   border: none;
   background: rgb(242, 247, 247);
   border-radius: 8px;
+}
+
+.subjects {
+  margin-top: 20px;
+  background-image: linear-gradient(var(--indigenous), white);
+
+}
+.subjects .subject-section {
+  padding: 30px;
+}
+.curr-header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.curr-header h2 {
+  text-align: center;
 }
