@@ -794,6 +794,20 @@
 .curr-header h2 {
   text-align: center;
 }
+/*Sporting*/
+.sport{
+  border: none;
+}
+.sport .sporting {
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.sport p {
+  color: #181d38;
+  line-height: normal;
+}
+/*End of Sporting*/
 
 /*showcasing*/
 .course-item .showcasing {
@@ -814,5 +828,14 @@
 }
 .achieve p {
   color: rgb(237, 227, 227);
+}
+.course-item .achieve .award {
+  align-items: center;
+}
+
+.course-item .achieve .award i {
+  color: yellow;
+  font-size: 45px;
+  font-weight: 10px;
 }
 /*End of achievements */
