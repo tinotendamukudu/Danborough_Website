@@ -787,6 +787,26 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .admission {
+    border: none;
+  }
+  .admission .body {
+    padding-left: 50px;
+  }
+  .admission .body ul {
+    padding: 0;
+    list-style: none;
+  }
+  .admission .body ul li {
+    padding-bottom: 10px;
+    color: #181d38;
+  }
+  
+  .admission .body ul li i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: var(--primary);
+  }
   
 
   /*end of admissions*/
@@ -804,7 +824,7 @@
 /*curriculum*/
 .staff-bg {
   background: linear-gradient(rgba(24, 29, 56, .5), rgba(24, 29, 56, .3)), url(../img/staff-bg.jpg);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -861,12 +881,15 @@
 .achieve p {
   color: rgb(237, 227, 227);
 }
+.achieve h5 {
+  color:  #eaab0dfe;
+}
 .course-item .achieve .award {
   align-items: center;
 }
 
 .course-item .achieve .award i {
-  color: yellow;
+  color:  #eaab0dfe;
   font-size: 45px;
   font-weight: 10px;
 }
