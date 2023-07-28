@@ -4,6 +4,7 @@
     --light: #F0FBFC;
     --dark: #181d38;
     --indigenous: rgb(43, 69, 51);
+    --text-color: #181d38;
 }
 
 .fw-medium {
@@ -443,6 +444,10 @@
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.main-page {
+  background-color: rgb(236, 238, 237);
+}
 .about-bg {
   background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .3)), url(../img/about-bg.jpg);
   background-position: center center;
@@ -789,6 +794,10 @@
   }
   .admission {
     border: none;
+  }
+  .main-admission {
+    background-color: rgb(236, 238, 237);
+    margin-top: 0;
   }
   .admission .body {
     padding-left: 50px;
