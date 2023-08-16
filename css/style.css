@@ -5,6 +5,7 @@
     --dark: #181d38;
     --indigenous: rgb(43, 69, 51);
     --text-color: #181d38;
+    --variable-color: rgb(236, 238, 237);
 }
 
 .fw-medium {
@@ -447,6 +448,10 @@
 
 .main-page {
   background-color: rgb(236, 238, 237);
+  padding-right: 30px;
+}
+.main-page .logo {
+  padding: 20px;
 }
 .about-bg {
   background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .3)), url(../img/about-bg.jpg);
@@ -486,6 +491,64 @@
       padding: 6px 18px;
     }
   }
+  .butn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .butn::after, .butn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .butn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .butn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .butn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   .butn a {
+    color: rgb(13, 165, 61);
+   }
+   
+   .butn a:hover {
+    color: white;
+   }
+   
+   .butn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
 
   /* End About Us  Section */
 
@@ -826,9 +889,14 @@
   padding-top: 10px;
   margin-top: 8vh;
   border: none;
-  background: rgb(213, 223, 217);
+  background: var(--variable-color);
   border-radius: 8px;
 }
+.community p{
+  color: var(--text-color);
+  line-height: normal;
+}
+/*end of community section*/
 
 /*curriculum*/
 .staff-bg {
@@ -840,7 +908,7 @@
 
 .subjects {
   margin-top: 20px;
-  background-image: linear-gradient(var(--indigenous), white);
+  background-image: linear-gradient(var(--indigenous), rgb(187, 192, 133));
 
 }
 .subjects .subject-section {
@@ -873,11 +941,18 @@
 /*showcasing*/
 .course-item .showcasing {
   padding: 20px;
-  background-color: rgb(213, 223, 217);
+  background-color: #b88c1bfe;
+  color: white;
   border-radius: 8px;
 }
 .course-item .pic {
   border-radius: 8px;
+}
+.award img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 /*end of showcasing */
 
