@@ -206,6 +206,7 @@
 }
 
 .page-header {
+    height: 65vh;
     background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .3)), url(../img/fbg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -262,6 +263,10 @@
 
 
 /*** Service ***/
+.service-background {
+  background-color: rgb(236, 238, 237);
+}
+
 .service-item {
     background: var(--indigenous);
     color: white;
@@ -453,7 +458,22 @@
 .main-page .logo {
   padding: 20px;
 }
+  @media (max-width: 768px) {
+     .card-paragraph {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    .main-page h5 {
+      text-align: center;
+    }
+
+    .main-page .button {
+      text-align: center;
+    }
+  }
+
 .about-bg {
+  height: 60vh;
   background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .3)), url(../img/about-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -850,11 +870,14 @@
   }
   /*admissions */
   .admissions-bg {
+    height: 60vh;
     background: linear-gradient(rgba(24, 29, 56, .5), rgba(24, 29, 56, .3)), url(../img/admissions-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
   .admission {
     border: none;
   }
@@ -900,6 +923,7 @@
 
 /*curriculum*/
 .staff-bg {
+  height: 55vh;
   background: linear-gradient(rgba(24, 29, 56, .5), rgba(24, 29, 56, .3)), url(../img/staff-bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
@@ -941,8 +965,8 @@
 /*showcasing*/
 .course-item .showcasing {
   padding: 20px;
-  background-color: #b88c1bfe;
-  color: white;
+  background-color:rgb(208, 219, 214);
+  color: rgb(24, 22, 22);
   border-radius: 8px;
 }
 .course-item .pic {
@@ -991,7 +1015,9 @@
 
 /*# Team
 --------------------------------------------------------------*/
-
+.members-bg {
+  background-color: rgb(236, 238, 237);
+}
 .team-title {
   margin-top: 50px;
 }
@@ -1003,7 +1029,7 @@
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #d4dce6;
+  background-color:rgb(208, 219, 214);
   position: relative;
 }
 
