@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+
 :root {
     --primary:#10994ec3;
     --light: #F0FBFC;
@@ -131,6 +131,7 @@
     transition: .5s;
 }
 
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -158,6 +159,35 @@
         color: green;
     }
 }
+
+@media (max-width: 990px) {
+  .navbar .nav-item .dropdown-menu {
+      display: block;
+      margin-top: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: .5s;
+  }
+
+  .navbar .dropdown-menu.fade-down {
+      top: 100%;
+      transform: rotateX(-75deg);
+      transform-origin: 0% 0%;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+      top: 100%;
+      transform: rotateX(0deg);
+      visibility: visible;
+      transition: .5s;
+      opacity: 1;
+  }
+
+  #nav-title{
+      color: green;
+  }
+}
+
 
 
 /*** Header carousel ***/
@@ -274,7 +304,7 @@
     border-radius: 8px;
 }
 
-@media(max-width:728px) {
+/*@media(max-width:728px) {
   .service-item {
     background: var(--indigenous);
     color: white;
@@ -283,7 +313,8 @@
     border-radius: 8px;
 }
 
-}
+}*/
+
 .service-item .service-title h5 {
   color: #eaab0dfe;
 }
@@ -569,7 +600,7 @@
     transform: skew(45deg) translate(-50%, -50%);
    }
    .butn a {
-    color: rgb(13, 165, 61);
+    color: rgb(13, 13, 12);
    }
    
    .butn a:hover {
