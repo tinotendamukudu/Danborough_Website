@@ -273,6 +273,17 @@
     transition: .5s;
     border-radius: 8px;
 }
+
+@media(max-width:728px) {
+  .service-item {
+    background: var(--indigenous);
+    color: white;
+    width: 50%;
+    transition: .5s;
+    border-radius: 8px;
+}
+
+}
 .service-item .service-title h5 {
   color: #eaab0dfe;
 }
@@ -779,9 +790,6 @@
   color: #181d38;
   line-height: normal;
 }
-.participation-item {
-  border-radius: 8px;
-}
 /*End of Sporting*/
 
 /*showcasing*/
@@ -798,7 +806,7 @@
   border-radius: 8px;
   background-color: #eaab0dfe;
   padding: 20px;
-  color: #eef1ea;
+  color: black;
   border: none;
   shape-margin: 10%;
 }
@@ -997,6 +1005,8 @@
   position: relative;
 }
 
+
+
 @media (min-width: 1024px) {
   .events {
     background-attachment: fixed;
@@ -1036,7 +1046,7 @@
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #e03a3c;
+  background: var(--primary);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1149,11 +1159,11 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e03a3c;
+  border: none;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e03a3c;
+  background-color: var(--color);
 }
 
 .portfolio-details .portfolio-info {
