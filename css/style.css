@@ -180,15 +180,15 @@
   
   #nav-title{
       color: green;
-      font-size: 40%;
+      font-size: 52%;
       
   }
   .top-nav a h2 .logo {
     margin: 0;
     padding: 0;
     left: 0;
-    width: 15%;
-    height: 15%;
+    width: 25%;
+    height: 25%;
   }
 }
 
