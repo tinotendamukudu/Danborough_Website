@@ -167,13 +167,28 @@
       color: green;
       font-size: 1em;
   }
+  .top-nav a h2 .logo {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+  }
 }
 
 @media (max-width: 720px) {
   
   #nav-title{
-      color: rgb(21, 22, 21);
-      font-size: 40%;
+      color: green;
+      font-size: 90%;
+      
+  }
+  .top-nav a h2 .logo {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
   }
 }
 
